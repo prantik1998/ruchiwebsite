@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href='https://fonts.googleapis.com/css?family=GFS Didot' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Proxima+Nova' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Avenir' rel='stylesheet'>
+  <link rel="stylesheet" href="navbar.css">
+  <link rel="stylesheet" href="section.css">
+  <link rel="stylesheet" href="scroll.css">
+  <link rel="stylesheet" href="carousal.css">
+  <script src="navbar.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <!-- Custom Responsive Navbar -->
+    <div class="navbar">
+        <a href="#home" class="logo">RUCHI SHAH</a>
+        <div class="hamburger" onclick="toggleNavbar()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="nav-links">
+            <a href="#latestwork">LATEST WORK</a>
+            <a href="#about">ABOUT</a>
+            <a href="#testimonials">TESTIMONIALS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#blog">BLOG</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- Dummy Content -->
+    <section id="home" class="home">
+    </section>
+
+    <section id="latestwork" class="latestwork">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <h1>LATEST WORK</h1>
+                    <div class="container">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            </ol>                      
+                            <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/la.jpg" alt="Los Angeles" style="width:100%;">
+                            </div>
+                        
+                            <div class="item">
+                                <img src="img/chicago.jpg" alt="Chicago" style="width:100%;">
+                            </div>
+                            
+                            <div class="item">
+                                <img src="img/ny.jpg" alt="New york" style="width:100%;">
+                            </div>
+                            </div>
+                            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 justify-content-left align-items-left">
+                    <h1>Ruchi Shah</h1>
+                    <h2>Corporate and Wedding Host</h2>
+                </div>
+                <div class="col-sm-6"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8 justify-content-left align-items-left">
+                    <p>My name is Ruchi Shah, and I’m a software developer currently based in Bangalore. I specialize in building web applications that create meaningful experiences for users.</p>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <button onclick="alert('hello')">Read More <span>&#8594;</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <h1>TESTIMONIALS</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 column-background column-separator" align="center" style="margin-bottom: 20px !important;">
+                    <img src="img/quotes.png"/>
+                    <h2>Alexa Nova,CA</h2>
+                    <p>“Testimonials provide a sense of what it's like to work with you or use your products. Change the text and add your own."</p>
+                </div>
+                <div class="col-sm-4 column-background column-separator" align="center" style="margin-bottom: 20px !important;">
+                    <img src="img/quotes.png"/>
+                    <h2>Alexa Nova,CA</h2>
+                    <p>“Testimonials provide a sense of what it's like to work with you or use your products. Change the text and add your own."</p>
+                </div>
+                <div class="col-sm-4 column-background" align="center" style="margin-bottom: 20px !important;">
+                    <img src="img/quotes.png"/>
+                    <h2>Alexa Nova,CA</h2>
+                    <p>“Testimonials provide a sense of what it's like to work with you or use your products. Change the text and add your own."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4" align="center">
+                    <img src="img/download.png">
+                    <br><br>
+                    <h1 class="eventsH">Corporate Events</h1>
+                    <br>
+                    <p class="eventsP">I'm a paragraph. Click here to add your own text and edit me.</p>
+                    <br><br>
+                </div>
+                <div class="col-sm-4" align="center">
+                    <img src="img/camera.png">
+                    <br><br>
+                    <h1 class="eventsH">Wedding Events</h1>
+                    <br>
+                    <p class="eventsP">I'm a paragraph. Click here to add your own text and edit me.</p>
+                    <br><br>
+                </div>
+                <div class="col-sm-4" align="center">
+                    <img src="img/disk.png">
+                    <br><br>
+                    <h1 class="eventsH">Music Video</h1>
+                    <br>
+                    <p class="eventsP">I'm a paragraph. Click here to add your own text and edit me.</p>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <h1>BLOG</h1>
+                </div>
+            </div>
+        </div>
+        <div class="blogContainer">
+            <div class="row">
+                <div class="col-sm-4 pb-4" align="center" style="margin-bottom: 20px !important;">
+                    <div class="card">
+                        <div class="container">
+                            <h1>My thoughts</h1>
+                            <p class="blogContainerP">There are certain things - as, a spider, a ghost,The income-tax, gout, an umbrella for three -,That I hate, but the thing that I hate the most.Is a thing they call the Sea.</p>
+                            <button class="btnContainer">More Info</button>
+                        </div>        
+                    </div>
+                </div>
+                <div class="col-sm-4 pb-4" align="center" style="margin-bottom: 20px !important;">
+                    <div class="card">
+                        <div class="container">
+                            <h1>My thoughts</h1>
+                            <p class="blogContainerP">There are certain things - as, a spider, a ghost,The income-tax, gout, an umbrella for three -,That I hate, but the thing that I hate the most.Is a thing they call the Sea.</p>
+                            <button class="btnContainer">More Info</button>
+                        </div>        
+                    </div>
+                </div>
+                <div class="col-sm-4 pb-4" align="center" style="margin-bottom: 20px !important;">
+                    <div class="card">
+                        <div class="container">
+                            <h1>My thoughts</h1>
+                            <p class="blogContainerP">There are certain things - as, a spider, a ghost,The income-tax, gout, an umbrella for three -,That I hate, but the thing that I hate the most.Is a thing they call the Sea.</p>
+                            <button class="btnContainer">More Info</button>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12" align="center">
+                    <h1>PORTFOLIO</h1>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                <li data-target="#videoCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#videoCarousel" data-slide-to="1"></li>
+                <li data-target="#videoCarousel" data-slide-to="2"></li>
+                </ol>                      
+                <div class="carousel-inner">
+                <div class="item active" align="center">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+            
+                <div class="item" align="center">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                
+                <div class="item" align="center">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                    </iframe>
+                </div>
+                </div>
+                <a class="left carousel-control" href="#videoCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#videoCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 justify-content-left align-items-left">
+                    <h1>Contact Me</h1>
+                    <h2>so we can create creative project together</h2><br>
+                    <a href="mailto:emceeshah@gmail.com">emceeshah@gmail.com</a>
+                </div>
+                <div class="col-sm-6" align="center">
+                    <div class="social-media">
+                        <!-- Facebook -->
+                        <a href="https://www.facebook.com" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>            
+                        <!-- Twitter -->
+                        <a href="https://www.twitter.com" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>            
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>            
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

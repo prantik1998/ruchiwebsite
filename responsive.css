@@ -1,0 +1,40 @@
+@media (max-width: 991px){
+    .card{
+        height:auto;
+    }
+}
+@media (max-width: 768px) {
+    /* Add a white line (border) between the columns */
+    .column-separator {
+        border-bottom: 2px solid white; /* White vertical line (border) */
+        border-right: none;
+    }
+
+    /* Remove the border from the last column */
+    .column-separator:last-child {
+        border-right: none;
+    }
+
+    /* Optional: background color to make the white line visible */
+    .column-background {
+        color: white; /* White text */
+        padding: 20px;
+    }
+    .card{
+        padding: 20px;
+    }
+}
+
+@media (max-width:576px){
+    .card{
+        min-height: 200px;
+        min-width: 200px;
+    }
+    .card h1{
+        font-size:16px
+    }
+    .card p{
+        font-size: 12px;
+    }
+
+}

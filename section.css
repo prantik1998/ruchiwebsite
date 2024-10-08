@@ -1,0 +1,210 @@
+
+body {
+    width: 100%; /* Ensures body takes full width */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove any default body padding */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+section {
+    padding: 60px 20px;
+    width:100%;
+    min-width:100%;
+}
+
+.home{
+    background-color: black;
+    height: 2vh;
+}
+
+.latestwork{
+    background-color: #4A4846;
+    height: auto;
+}
+
+.latestwork h1{
+    font-size: 56px;
+    font-family:  'Proxima Nova', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.about{
+    background-color: black;
+}
+
+.about h1{
+    font-size:36px;
+    font-family: 'Avenir', sans-serif;
+    color:white;
+    font-weight: 600;
+}
+
+.about h2{
+    font-size:30px;
+    font-family: 'Avenir', sans-serif;
+    color:white;
+}
+
+.about p{
+    font-size:22px;
+    font-family:"GFS Didot";
+    font-style: italic;
+    color:#87837E;
+}
+
+.about button{
+    font-size: 30px;
+    font-style:"italic";
+    background-color:black;
+    color: white;
+    border: 0;
+}
+
+.blog{
+    background-color: black;
+    height:auto;
+}
+
+.blog h1{
+    font-size:56px;
+    font-family: 'Avenir', sans-serif;
+    color:white;
+    font-weight:600;
+}
+
+
+
+.contact{
+    background-color: black;
+    height:auto;
+}
+
+.contact h1{
+    font-size:30px;
+    font-family: 'Avenir', sans-serif;
+    color:white;
+    text-decoration: underline;
+}
+
+.contact h2{
+    font-size:30px;
+    font-family: 'Avenir', sans-serif;
+    color:white;
+}
+
+.contact a{
+    font-size:22px;
+    font-family:"GFS Didot";
+    color:white;
+    font-style:italic;
+}
+
+.events{
+    background-color: white;
+}
+
+.eventsH{
+    font-size:30px;
+    font-family: 'Avenir', sans-serif;
+    color:black;
+    font-style:bold;
+    font-weight:600;
+    align-items: center;
+}
+
+.eventsP{
+    font-size:26px;
+    font-family: 'GFS Didot', sans-serif;
+    font-style:italic;
+    color:#87837E;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.social-media a {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.testimonials{
+    background-color: black;
+    height:auto;
+    border-top: 2px solid white;
+    padding-bottom: 10vh;
+}
+
+.testimonials h1{
+    font-size: 48px;
+    font-family:  'Proxima Nova', sans-serif;
+    color: white;
+    font-style: bold;
+    font-weight: 600;
+    margin-bottom: 10vh;
+}
+
+.testimonials h2{
+    font-size: 30px;
+    font-family:  'Proxima Nova', sans-serif;
+    color: white;
+}
+
+.testimonials p{
+    font-size: 20px;
+    font-family: "GFS Didot" ;
+    font-style: italic;
+    color:#87837E;
+}
+
+.blogContainer{
+    width: 100%; /* Full width */
+    height: auto; /* Set a height */
+    background: linear-gradient(to top, #f0f0f0 0%, #537895 100%);; 
+    display: flex; /* Optional: Use flexbox for centering text */
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    color: white; /* White text for better contrast */
+    padding:40px;
+    border-radius: 20px;
+}
+
+.blogContainerP{
+    font-size: 24px;
+    font-family:'GFS Didot';
+    font-style: italic;
+}
+
+.btnContainer{
+    font-size: 16px;
+    font-family:'GFS Didot';
+    color:black;
+    background-color: #87837E;
+    border:0;
+    border-radius: 10px;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.portfolio{
+    height:100vh;
+}
+
+.portfolio h1{
+    font-size: 48px;
+    font-family:  'Proxima Nova', sans-serif;
+    font-weight: 600;
+    color: black;
+}
